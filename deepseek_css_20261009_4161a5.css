@@ -1,0 +1,83 @@
+/* Reset básico */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+    background-color: #050505; /* Fundo bem escuro, quase preto */
+    color: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    width: 100%;
+    max-width: 800px;
+    display: flex;
+    justify-content: center;
+}
+
+.card {
+    background-color: #0a0a14; /* Fundo do card levemente mais claro que o body */
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    text-align: center;
+    width: 100%;
+    animation: fadeIn 0.5s ease-in-out;
+}
+
+h1 {
+    color: #00d2ff; /* Azul ciano brilhante */
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    text-shadow: 0 0 10px rgba(0, 210, 255, 0.3);
+}
+
+p {
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 30px;
+    color: #e0e0e0;
+}
+
+.botoes-container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+button {
+    background-color: #1a1a2e;
+    color: #ffffff;
+    border: 1px solid #333;
+    padding: 15px 20px;
+    border-radius: 30px; /* Botões arredondados */
+    font-size: 1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    width: 100%;
+    max-width: 600px;
+    text-align: center;
+}
+
+button:hover {
+    background-color: #00d2ff;
+    color: #000;
+    border-color: #00d2ff;
+    transform: scale(1.02);
+    box-shadow: 0 0 15px rgba(0, 210, 255, 0.4);
+}
+
+/* Animação suave ao trocar de tela */
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(10px); }
+    to { opacity: 1; transform: translateY(0); }
+}
